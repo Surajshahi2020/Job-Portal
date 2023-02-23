@@ -1,0 +1,41 @@
+{% load static %}
+{% block body %}
+{% include 'navigation.html' %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+<style>
+    .mydiv:hover{
+        box-shadow: 0 0 20px 0 rgba(0,0,0.3);
+        transform:translateY(-20px)
+    }
+</style>
+
+<marquee style="font-family: 'Monotype Corsiva'; font-size: 25px; color: darkcyan; background-color: #E1D9D1; font-weight:bold; margin-top: 1%">
+    Contact
+</marquee>
+<hr>
+
+<div class="container mt-5">
+    <br><br>
+ <div class="row mt-5">
+    <div class="col-sm-3 mydiv">
+        <h4 class="text-center"><i class="fas fa-phone-square"></i>Contact</h4>
+        <p class="text-center">9809461773</p>
+    </div>
+
+    <div class="col-sm-3 mydiv">
+        <h4 class="text-center"><i class="fas fa-envelope"></i>Email ID</h4>
+        <p class="text-center">kingshahi163@gmail.com</p>
+    </div>
+
+    <div class="col-sm-3 mydiv">
+        <h4 class="text-center"><i class="fas fa-address-card"></i>Address</h4>
+        <p class="text-center">Nepal,Kathmandu,Balkumari</p>
+    </div>
+
+    <div class="col-sm-3 mydiv">
+        <h4 class="text-center"><i class="fas fa-clock"></i>Office Timing</h4>
+        <p class="text-center">10:00 A.M to 7:00 P.M</p>
+    </div>
+ </div>
+</div>
+{% endblock %}
