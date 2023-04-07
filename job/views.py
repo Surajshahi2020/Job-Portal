@@ -1,3 +1,4 @@
+#checking the push command of gitgit 
 from django.shortcuts import render,redirect 
 from .models import *
 from django.contrib.auth.models import User
@@ -30,7 +31,6 @@ def user_login(request):
     if request.method == "POST":
         u = request.POST['uname']
         p = request.POST['pwd']
-        password = request.POST['pwd']
         user = authenticate(username=u,password=p)
         if user:
             try:
